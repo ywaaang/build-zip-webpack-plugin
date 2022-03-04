@@ -2,16 +2,20 @@
   "name": "zip-build-file-plugin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  "github": "https://github.com/ywaaang/build-zip-webpack-plugin.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/eslint-parser": "^7.5.4",
     "chalk": "^4.1.2",
     "compressing": "^1.5.1",
     "fs": "*",
     "glob": "^7.1.7",
-    "ora": "^6.0.0",
     "path": "^0.12.7",
     "tapable": "^2.2.0"
   },
@@ -22,5 +26,8 @@
     "zip"
   ],
   "author": "Ben Wang",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
 }
